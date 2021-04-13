@@ -1,4 +1,4 @@
-name: flutter_app_wireless
+name: flutter_application
 description: A new Flutter application.
 
 # The following line prevents the package from being accidentally published to
@@ -23,12 +23,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
   carousel_pro: ^0.0.13
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.2
+  cupertino_icons: ^1.0.1
+
+
 
 dev_dependencies:
   flutter_test:
@@ -64,6 +65,10 @@ flutter:
     - images/cats/workstation.png
     - images/products/Asus_ROG.png
     - images/products/lenovo_P340.png
+    - images/products/HeadsetCorsairGamingHS35.jpg
+    - images/products/SignoMP704CondenserMicrophone.jpg
+    - images/products/MacBookPro13.jpg
+    - images/products/LeicaXType113.jpg
     - images/cats/004-television.png
     - images/cats/007-microphone.png
     - images/cats/008-camera.png
