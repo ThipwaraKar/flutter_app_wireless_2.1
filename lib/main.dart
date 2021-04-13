@@ -2,15 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 
 //my own imports
-import 'package:flutter_app_wireless/components/horizontal_listview.dart';
-import 'package:flutter_app_wireless/components/products.dart';
-import 'package:flutter_app_wireless/pages/cart.dart';
+import 'package:flutter_application/pages/cart.dart';
+import 'package:flutter_application/components/horizontal_listview.dart';
+import 'package:flutter_application/components/products.dart';
+
+
+//import 'package:flutter_app_wireless/components/horizontal_listview.dart';
+//import 'package:flutter_app_wireless/components/products.dart';
+//import 'package:flutter_app_wireless/pages/cart.dart';
 void main(){
   runApp(
-    MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: HomePage(),
-    )
+      MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: HomePage(),
+      )
   );
 }
 
@@ -57,15 +62,15 @@ class _HomePageState extends State<HomePage> {
           children: <Widget>[
             // header
             new UserAccountsDrawerHeader(accountName: Text('TheMint K.'),
-                accountEmail: Text('Thipwara_ITCS424@gmail.com'),
-            currentAccountPicture: GestureDetector(
-              child: new CircleAvatar(
-                backgroundColor: Colors.deepOrange,
-                child: Icon(Icons.person, color: Colors.white,),
+              accountEmail: Text('Thipwara_ITCS424@gmail.com'),
+              currentAccountPicture: GestureDetector(
+                child: new CircleAvatar(
+                  backgroundColor: Colors.deepOrange,
+                  child: Icon(Icons.person, color: Colors.white,),
+                ),
               ),
-            ),
               decoration: new BoxDecoration(
-                color: Colors.deepOrange
+                  color: Colors.deepOrange
               ),
             ),
             //Body
@@ -134,7 +139,7 @@ class _HomePageState extends State<HomePage> {
           image_carousel,
           //padding widget
           new Padding(padding: const EdgeInsets.all(9.0),
-          child: new Text('Categories'),),
+            child: new Text('Categories'),),
 
           //Horizontal list view begins here
           HorizontalList(),
