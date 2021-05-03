@@ -2,20 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 
 //my own imports
-import 'package:flutter_application/pages/cart.dart';
-import 'package:flutter_application/components/horizontal_listview.dart';
-import 'package:flutter_application/components/products.dart';
+import 'package:flutter_app_wireless/components/horizontal_listview.dart';
+import 'package:flutter_app_wireless/components/products.dart';
+import 'package:flutter_app_wireless/pages/Favorite.dart';
+import 'package:flutter_app_wireless/pages/Profile.dart';
+import 'package:flutter_app_wireless/pages/cart.dart';
+import 'package:flutter_app_wireless/pages/MyOrder.dart';
 
-
-//import 'package:flutter_app_wireless/components/horizontal_listview.dart';
-//import 'package:flutter_app_wireless/components/products.dart';
-//import 'package:flutter_app_wireless/pages/cart.dart';
 void main(){
   runApp(
-      MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: HomePage(),
-      )
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
+    )
   );
 }
 
@@ -62,35 +61,31 @@ class _HomePageState extends State<HomePage> {
           children: <Widget>[
             // header
             new UserAccountsDrawerHeader(accountName: Text('TheMint K.'),
-              accountEmail: Text('Thipwara_ITCS424@gmail.com'),
-              currentAccountPicture: GestureDetector(
-                child: new CircleAvatar(
-                  backgroundColor: Colors.deepOrange,
-                  child: Icon(Icons.person, color: Colors.white,),
-                ),
+                accountEmail: Text('Thipwara_ITCS424@gmail.com'),
+            currentAccountPicture: GestureDetector(
+              child: new CircleAvatar(
+                backgroundColor: Colors.deepOrange,
+                child: Icon(Icons.person, color: Colors.white,),
               ),
+            ),
               decoration: new BoxDecoration(
-                  color: Colors.deepOrange
+                color: Colors.deepOrange
               ),
             ),
             //Body
 
+
             InkWell(
-              onTap: (){},
-              child: ListTile(
-                title: Text('HomePage'),
-                leading: Icon(Icons.home, color: Colors.red,),
-              ),
-            ),
-            InkWell(
-              onTap: (){},
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => new profile()));
+              },
               child: ListTile(
                 title: Text('My Account'),
                 leading: Icon(Icons.person , color: Colors.red,),
               ),
             ),
             InkWell(
-              onTap: (){},
+              onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context) => new MyOrder()));},
               child: ListTile(
                 title: Text('My Orders'),
                 leading: Icon(Icons.shopping_basket, color: Colors.orange,),
@@ -106,7 +101,9 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             InkWell(
-              onTap: (){},
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => new Favorite()));
+              },
               child: ListTile(
                 title: Text('Favorites'),
                 leading: Icon(Icons.favorite, color: Colors.red,),
@@ -139,7 +136,7 @@ class _HomePageState extends State<HomePage> {
           image_carousel,
           //padding widget
           new Padding(padding: const EdgeInsets.all(9.0),
-            child: new Text('Categories'),),
+          child: new Text('Categories'),),
 
           //Horizontal list view begins here
           HorizontalList(),

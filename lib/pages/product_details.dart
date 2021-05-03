@@ -228,20 +228,20 @@ class _Similar_productState extends State<Similar_product> {
     {
       "name": "Microphone",
       "picture":"images/products/SignoMP704CondenserMicrophone.jpg",
-      "old_price":40,
-      "price":29,
+      "old_price":1500,
+      "price":500,
     },
     {
-      "name": "Microphone",
+      "name": "MacBook",
       "picture":"images/products/MacBookPro13.jpg",
-      "old_price":35,
-      "price":25,
+      "old_price":5000,
+      "price":2500,
     },
     {
       "name": "Leica",
       "picture":"images/products/LeicaXType113.jpg",
-      "old_price":40,
-      "price":29,
+      "old_price":10000,
+      "price":1000,
     },
 
   ];
@@ -298,7 +298,7 @@ class Similar_Single_prod extends StatelessWidget {
                 child: new Row(children: <Widget>[
                   Expanded(child: Text(product_name, style: TextStyle(fontWeight: FontWeight.bold , fontSize: 16.0),
                   ),),
-                  new Text("\$${product_price}", style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold ),)
+                  new Text("\฿${product_price}", style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold ),)
                 ],
                 ),
               ),
