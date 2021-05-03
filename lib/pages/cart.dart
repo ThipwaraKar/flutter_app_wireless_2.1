@@ -28,7 +28,7 @@ class _CartState extends State<Cart> {
           children: <Widget>[
             Expanded(child: ListTile(
               title: new Text("Total: "),
-              subtitle: new Text("\$230"),
+              subtitle: new Text("\฿2998"),
             )),
             Expanded(child: new MaterialButton(onPressed: (){},
             child: new Text("Check out", style: TextStyle(color: Colors.white),),

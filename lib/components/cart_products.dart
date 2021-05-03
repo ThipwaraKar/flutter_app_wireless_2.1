@@ -11,7 +11,7 @@ class _Cart_productsState extends State<Cart_products> {
   {
   "name": "Asus",
   "picture":"images/products/Asus_ROG.png",
-  "price":25,
+  "price":1000,
     //product spec options
     "Processor" : "10th Gen Intel",
     "Memory" : "16GB DDR",
@@ -20,11 +20,11 @@ class _Cart_productsState extends State<Cart_products> {
     {
       "name": "P340",
       "picture":"images/products/lenovo_P340.png",
-      "price":29,
+      "price":999,
       //product spec options
       "Processor" : "Intel i5 8500",
       "Memory" : "8GB DDR4",
-      "quantity" :  1,
+      "quantity" :  2,
     },
 
   ];
@@ -124,7 +124,7 @@ class Single_cart_product extends StatelessWidget {
 
             new Container(
               alignment: Alignment.topLeft,
-              child: new Text("\$${cart_product_price}", style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.bold, color: Colors.red),),
+              child: new Text("\B${cart_product_price}", style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.bold, color: Colors.red),),
             )
           ],
         ),

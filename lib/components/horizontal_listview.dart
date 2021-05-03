@@ -11,6 +11,7 @@ class HorizontalList extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         children: <Widget>[
           Category(
+
             image_location: 'images/cats/004-television.png',
             image_caption: 'Desktop',
           ),

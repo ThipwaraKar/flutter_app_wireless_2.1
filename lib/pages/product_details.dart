@@ -226,24 +226,23 @@ class Similar_product extends StatefulWidget {
 class _Similar_productState extends State<Similar_product> {
   var product_list = [
     {
-      "name": "Asus",
-      "picture":"images/products/Asus_ROG.png",
-      "old_price":35,
-      "price":25,
-    },
-    {
-      "name": "P340",
-      "picture":"images/products/lenovo_P340.png",
+      "name": "Microphone",
+      "picture":"images/products/SignoMP704CondenserMicrophone.jpg",
       "old_price":40,
       "price":29,
     },
     {
-      "name": "Asus",
-      "picture":"images/products/Asus_ROG.png",
+      "name": "Microphone",
+      "picture":"images/products/MacBookPro13.jpg",
       "old_price":35,
       "price":25,
     },
-
+    {
+      "name": "Leica",
+      "picture":"images/products/LeicaXType113.jpg",
+      "old_price":40,
+      "price":29,
+    },
 
   ];
   @override
